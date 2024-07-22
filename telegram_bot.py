@@ -2,12 +2,12 @@ from telegram.ext import Updater, CommandHandler
 
 # Define a function to handle the /start command
 def start(update, context):
-    sticker_id = 'CAACAgUAAxkBAAEB2OtkgFNpCSVb3ukEv8_J796JtCyn-gACNwUAAuBGiVTP-IZF8MfuMi8E
+    sticker_id = "CAACAgUAAxkBAAEB2OtkgFNpCSVb3ukEv8_J796JtCyn-gACNwUAAuBGiVTP-IZF8MfuMi8E"
 '  # Replace with your sticker ID
     context.bot.send_sticker(chat_id=update.effective_chat.id, sticker=sticker_id)
 
 def main():
-    updater = Updater(token='6075754405:AAHphUPv2I2ULg2EGW0XQhI82iUr89fXj4U', use_context=True)
+    updater = Updater(token="6075754405:AAHphUPv2I2ULg2EGW0XQhI82iUr89fXj4U", use_context=True)
     dispatcher = updater.dispatcher
 
     # Add a handler for the /start command
